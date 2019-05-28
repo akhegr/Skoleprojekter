@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Kontakt Ibs PC-Biks";
+}
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Facts om os</h3>
+        <p>Brug dette område til at give yderligere information.</p>
+        <div class="images">
+            <a class="thumb">
+                <img src="~/Images/1067309.jpg" height="115px" alt="">
+                <span class="name">Sævar Bergur Sigurgeirsson</span>
+            </a>
+
+            <a class="thumb">
+                <img src="~/Images/1067347.jpg" height="115px" alt="">
+                <span class="name">Christian Ib Dronninglund Sørensen</span>
+            </a>
+
+            <a class="thumb">
+                <img src="~/Images/1067367.jpg" height="115px" alt="">
+                <span class="name">Aksel Heidemann Gregersen</span>
+            </a>
+
+            <a class="thumb">
+                <img src="~/Images/1069183.jpg" height="115px" alt="">
+                <span class="name">Daniel Ludvig Rundberg Sletskov</span>
+            </a>
+
+            <a class="thumb">
+                <img src="~/Images/1069711.jpg" height="115px" alt="">
+                <span class="name">Mathias Asferg Nielsen</span>
+            </a>
+        </div>
+
+
+        </div>
+    <div class="col-md-6">
+        <h3>Find os her</h3>
+        <address>
+            <span class="glyphicon glyphicon-road"></span>
+            Sofiendalsvej 60<br />
+
+            <span class="glyphicon glyphicon-home"></span>
+            9200 Aalborg SV<br />
+
+            <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <span style="margin-left:14px;">&nbsp;Danmark</span><br />
+
+            <span class="glyphicon glyphicon-phone-alt"></span>
+            +45 72 69 00 00
+        </address>
+
+        <address>
+            <strong>Marketing:</strong> <a href="mailto:ib@pcbiks.dk">ib@pcbiks.dk</a><br />
+        </address>
+    </div>
+</div>
+
+<style>
+    .images {
+        //position: relative;
+        //margin: 75px auto;
+        //width: 252px;
+        height: 180px;
+    }
+
+    .thumb img {
+        border: 1px solid #000;
+        margin: 3px;
+        float: left;
+    }
+
+    .thumb span {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .thumb:hover, .thumb:hover span {
+        visibility: visible;
+        top: 230px;
+        left: 25px;
+        z-index: 1;
+    }
+
+    .name {
+        font-size:20px;
+    }
+</style>

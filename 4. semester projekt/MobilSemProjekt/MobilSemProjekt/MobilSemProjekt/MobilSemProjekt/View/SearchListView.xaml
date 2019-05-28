@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobilSemProjekt.MVVM.ViewModel;assembly=MobilSemProjekt.MVVM"
+             x:Class="MobilSemProjekt.View.SearchListView"
+             Title="Søgeresultater">
+
+    <ListView x:Name="SearchListViewDisplay"
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement"
+            HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell Height="100">
+                    <StackLayout>
+                        <Label x:Name="locationNameLabel" Text="{Binding Location.LocationName}" 
+                   Style="{DynamicResource ListItemTextStyle}" />
+                        <Label Text="{Binding Location.LocationDescription}" 
+                   Style="{DynamicResource ListItemDetailTextStyle}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

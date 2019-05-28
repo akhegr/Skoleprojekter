@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC1DE35F-C496-43F7-BCE8-62EAD218A52A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="DbEmployee.cs" />
+    <Compile Include="DbOrder.cs" />
+    <Compile Include="DbOrderLineList.cs" />
+    <Compile Include="DbOrderLine.cs" />
+    <Compile Include="DbProduct.cs" />
+    <Compile Include="DbCustomer.cs" />
+    <Compile Include="DbSupplier.cs" />
+    <Compile Include="DbCategory.cs" />
+    <Compile Include="DbUniqueProduct.cs" />
+    <Compile Include="DbZipCity.cs" />
+    <Compile Include="IDbEmployee.cs" />
+    <Compile Include="IDbZipCity.cs" />
+    <Compile Include="IDbSupplier.cs" />
+    <Compile Include="IDbCategory.cs" />
+    <Compile Include="IDbProduct.cs" />
+    <Compile Include="IDbUniqueProduct.cs" />
+    <Compile Include="IDbCustomer.cs" />
+    <Compile Include="IDbOrderLineList.cs" />
+    <Compile Include="IDbOrderLine.cs" />
+    <Compile Include="IDbOrder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{F6278E88-EB71-4A47-82FA-F827D50EEC7D}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj">
+      <Project>{480FF9C1-266A-44D2-A78D-B37BB309C941}</Project>
+      <Name>Exceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

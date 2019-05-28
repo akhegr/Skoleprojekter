@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e9534abb-5e1f-43ae-96d1-c60c58153668" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/ZipCityService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="b5b93658-9a39-45c6-bb4a-13e757c68aab" SourceId="1" SourceUrl="http://localhost:8733/ZipCityService/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="b0e9159d-5253-4fc8-bee6-af746b12c3e6" SourceId="1" SourceUrl="http://localhost:8733/ZipCityService/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="e9ccd820-492a-45d2-b87c-3cff6eae9f33" SourceId="1" SourceUrl="http://localhost:8733/ZipCityService/?xsd=xsd1" />
+    <MetadataFile FileName="ZipCityService.wsdl" MetadataType="Wsdl" ID="d06d44c7-10e6-4b9c-8e42-1713c80ea428" SourceId="1" SourceUrl="http://localhost:8733/ZipCityService/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="1c4c0501-f326-4300-9ed5-50f5c5d17312" SourceId="1" SourceUrl="http://localhost:8733/ZipCityService/?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

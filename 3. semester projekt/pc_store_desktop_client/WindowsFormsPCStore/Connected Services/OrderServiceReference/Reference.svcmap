@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e578083c-bf08-4d1b-aa4e-3b301fd3d3d0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/OrderService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="eee3f346-d400-4154-9ac7-0026635f5dfc" SourceId="1" SourceUrl="http://localhost:8733/OrderService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="5669cf3e-07ea-44cf-a8de-14dcc92b7658" SourceId="1" SourceUrl="http://localhost:8733/OrderService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="e7ac6437-af1e-401e-98cb-73b6e0225bff" SourceId="1" SourceUrl="http://localhost:8733/OrderService/mex" />
+    <MetadataFile FileName="Domain.xsd" MetadataType="Schema" ID="1af26b1e-0178-46e4-a575-a04a0e9eea3c" SourceId="1" SourceUrl="http://localhost:8733/OrderService/mex" />
+    <MetadataFile FileName="Exceptions.xsd" MetadataType="Schema" ID="89ee8b00-7b9c-4dbc-a31d-ef9681f68827" SourceId="1" SourceUrl="http://localhost:8733/OrderService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

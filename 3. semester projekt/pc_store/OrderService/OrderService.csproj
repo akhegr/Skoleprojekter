@@ -1,0 +1,100 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8243A33D-C3BE-4803-8EB4-CE49E22FC5F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrderService</RootNamespace>
+    <AssemblyName>OrderService</AssemblyName>
+    <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <XsdCodeGenEnabled>True</XsdCodeGenEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbService.cs" />
+    <Compile Include="CustomerService.cs" />
+    <Compile Include="EmployeeService.cs" />
+    <Compile Include="IDbService.cs" />
+    <Compile Include="IEmployeeService.cs" />
+    <Compile Include="ICustomerService.cs" />
+    <Compile Include="OrderService.cs" />
+    <Compile Include="IOrderService.cs" />
+    <Compile Include="ProductService.cs" />
+    <Compile Include="IProductService.cs" />
+    <Compile Include="ICategoryService.cs" />
+    <Compile Include="IZipCityService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CategoryService.cs" />
+    <Compile Include="ZipCityService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{6908C46B-7995-436E-994D-7B944E44FB36}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{F6278E88-EB71-4A47-82FA-F827D50EEC7D}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj">
+      <Project>{480FF9C1-266A-44D2-A78D-B37BB309C941}</Project>
+      <Name>Exceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VSToolsPath Condition="'$(VSToolsPath)' == '' and '$(VisualStudioVersion)' != '' and '$(VisualStudioVersion)' != '11.0'">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio</VSToolsPath>
+    <WcfServiceModelTargetPath>$(VSToolsPath)\WCF</WcfServiceModelTargetPath>
+  </PropertyGroup>
+  <Import Project="$(WcfServiceModelTargetPath)\Microsoft.VisualStudio.ServiceModel.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
+        <WcfProjectProperties>
+          <AutoStart>True</AutoStart>
+        </WcfProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

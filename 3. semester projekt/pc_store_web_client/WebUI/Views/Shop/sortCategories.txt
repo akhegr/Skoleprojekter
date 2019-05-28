@@ -1,0 +1,38 @@
+ <!--
+    <h2>Sort for</h2>
+
+    <div class="btn-group">
+        <div class="col-md-5 col-sm-5">
+            <div class="form-group">
+                <select class="form-control btn btn-primary">
+                    <option selected disabled>--Subkategori--</option>
+                    <option value="">Airflow</option>
+                    <option value="">Cache [gHz]</option>
+                    <option value="">Effekt [Watt]</option>
+                    <option value="">Farve</option>
+                    <option value="">Hastighed [DPI]</option>
+                    <option value="">Lagerplads [gb/tb]</option>
+                    <option value="">Længde</option>
+                    <option value="">Pris</option>
+                    <option value="">Størrelse</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-sm-5">
+            <div class="form-group">
+                <select class="form-control btn btn-primary">
+                    <option selected disabled>--Rækkefølge--</option>
+                    <option value="largest">Størst først</option>
+                    <option value="lowest">Mindst først</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <div class="formgroup ">
+                <input type="submit" class="btn btn-primary" value="Sorter">
+            </div>
+        </div>
+        <br />
+        <hr />
+        -->

@@ -1,0 +1,113 @@
+﻿
+@model WebUI.CustomerServiceReference.Customer
+@{
+    ViewBag.Title = "Kundeoplysninger";
+}
+<h2>Kundeoplysninger</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Indtast dine kundeoplysninger nedenfor</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <label class="control-label col-md-2">Fornavn</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model._fName, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model._fName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Efternavn</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model._lName, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model._lName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Adresse</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model._address, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model._address, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Postnr og by</label>
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
+            <input type="text" class="form-control" id="zipCode" placeholder="Postnr." required maxlength="4" style="width: 60px;" onblur="findByZip()" />
+            <input type="text" class="form-control" id="city" placeholder="Bynavn" disabled required style="width: 200px;" />
+        </div>
+    </div>
+
+    <div class="form-group" style="display: none;">
+        <label class="control-label col-md-2"></label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model._zipCity._id, new { htmlAttributes = new { @class = "form-control", @id = "zipCityId" } })
+            @Html.ValidationMessageFor(model => model._zipCity._id, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Email</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model._email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model._email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Telefon nr.</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model._phone, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model._phone, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Bekræft" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<script>
+    var uri = '/api/zipcity';
+
+    function formatItem(item) {
+        return item._city;
+    }
+
+    function getId(item) {
+        return item._id;
+    }
+
+    function findByZip() {  
+        var zipCode = $('#zipCode').val();
+        $.getJSON(uri + '?zipcode=' + zipCode)
+            .done(function (data) {
+                $('#city').val(formatItem(data));
+                $('#zipCityId').val(getId(data));
+            })
+            .fail(function (jqXHR, textStatus, err) {
+                $('#city').val("");
+                $('#zipCityId').val("");
+                alert(err.Detail.Message);
+            });
+    }
+
+    function back() {
+        window.location = "/Shop";
+    }
+</script>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

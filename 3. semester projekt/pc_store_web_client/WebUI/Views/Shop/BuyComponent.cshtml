@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Vælg komponent";
+}
+
+<div class="jumbotron">
+    <h1>Ibs PC-biks</h1>
+    <div id="div1" style="display: inline-block;width:65%;">
+        <p class="lead">Vælg komponent - tekst</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h2>Kategori</h2>
+        <div class="list-group" id="category">
+            <a class="list-group-item list-group-item-action" onclick="select(this, 0);">
+                Alle
+            </a>
+
+            @model IEnumerable<WebUI.CategoryServiceReference.Category>
+            @{ List<WebUI.CategoryServiceReference.Product> myList = new List<WebUI.CategoryServiceReference.Product>(); }
+            @foreach (var item in Model)
+            {
+                <a class="list-group-item list-group-item-action" onclick="select(this, @item._id);">
+                    @Html.DisplayFor(modelItem => item._type)
+                    <span class="badge badge-primary badge-pill">
+                        @{ int amountOfProducts = item._products.Count(); }
+                        @{ myList.AddRange(item._products); }
+                        @Html.DisplayFor(modelItem => amountOfProducts)
+                    </span>
+                </a>
+            }
+            
+        </div>
+    </div>
+    <div class="col-md-9">
+        <h2>Varer</h2>
+
+        <table class="table table-hover" id="products">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Navn</th>
+                    <th scope="col">Pris</th>
+                    <th scope="col">Tilføj</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ if (!myList.Any())
+                    {
+                        <tr>
+                            <td colspan="4" class="alert alert-info">
+                                <strong>Oh...! </strong> Du skal først vælge en kategori i venstre side.
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        myList = myList.OrderBy(p => p._id).ToList();
+                        foreach (var item in myList)
+                        {
+                            <tr data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="@Html.DisplayFor(modelItem => item._description)">
+                                <th scope="row">@Html.DisplayFor(modelItem => item._id)</th>
+                                <td>@Html.DisplayFor(modelItem => item._name)</td>
+                                <td>@(item._price.ToString("#,##0.00")) kr.</td>
+                                <td><input type="button" class="btn btn-success" onclick="addProduct(@item._id)" value="+" /></td>
+                            </tr>
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+
+    var uri = '/api/component';
+    var orderURI = '/api/order';
+
+    function formatItem(item) {
+        var nf = Intl.NumberFormat();
+        
+        return "<tr><th scope=\"row\">" + item._id + "</th><td>" + item._name + "</td><td>" + nf.format(item._price) +
+            "  kr.</td><td><button type=\"button\" class=\"btn btn-success\" onclick=\"addProduct(" + item._id + ")\">+</button></td></tr>";
+    }
+
+    function findByCatId(id) {
+        if (id == 0) {
+            $("#products > tbody > tr").remove();
+            $.getJSON(uri)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $("#products tbody").append(formatItem(item));
+                    });
+                });
+        }
+        else {
+            $("#products > tbody > tr").remove();
+            $.getJSON(uri + '/?categoryId=' + id)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $("#products tbody").append(formatItem(item));
+                    });
+                });
+        }
+    }
+    
+    function addProduct(productId) {
+        $.ajax({
+            url: "/Shop/BuyComponent",
+            type: "POST",
+            data: { pId: productId, amount: 1 },
+            success: function (response) {
+                alert("Succes: Produktet er tilføjet til ordren!");
+            },
+            error: function (response) {
+                alert("Fejl: Produktet blev ikke tilføjet til ordren!");
+            }
+        });
+    }
+   
+    function select(elem, id) {
+        setSelected(elem);
+        findByCatId(id);
+    }
+
+    function setSelected(elem) {
+        var a = document.getElementsByTagName('a');
+        for (i = 0; i < a.length; i++) {
+            a[i].classList.remove('active');
+        }
+        elem.classList.add('active');
+    }
+</script>

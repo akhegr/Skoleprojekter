@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OrderService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Domain" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Exceptions" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOrderService_Create_InputMessage">
+    <wsdl:part name="parameters" element="tns:Create" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_Create_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_Read_InputMessage">
+    <wsdl:part name="parameters" element="tns:Read" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_Read_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddProduct" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddCustomer_CustomerNotExistExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Exceptions" name="detail" element="q1:CustomerNotExistException" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_SetProcessed_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetProcessed" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_SetProcessed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetProcessedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetAllProductsByOrderId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProductsByOrderId" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetAllProductsByOrderId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProductsByOrderIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOrderService">
+    <wsdl:operation name="Create">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/Create" message="tns:IOrderService_Create_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CreateResponse" message="tns:IOrderService_Create_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Read">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/Read" message="tns:IOrderService_Read_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/ReadResponse" message="tns:IOrderService_Read_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/AddProduct" message="tns:IOrderService_AddProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/AddProductResponse" message="tns:IOrderService_AddProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/AddCustomer" message="tns:IOrderService_AddCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/AddCustomerResponse" message="tns:IOrderService_AddCustomer_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IOrderService/AddCustomerCustomerNotExistExceptionFault" name="CustomerNotExistExceptionFault" message="tns:IOrderService_AddCustomer_CustomerNotExistExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetProcessed">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/SetProcessed" message="tns:IOrderService_SetProcessed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/SetProcessedResponse" message="tns:IOrderService_SetProcessed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProductsByOrderId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetAllProductsByOrderId" message="tns:IOrderService_GetAllProductsByOrderId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetAllProductsByOrderIdResponse" message="tns:IOrderService_GetAllProductsByOrderId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetAll" message="tns:IOrderService_GetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetAllResponse" message="tns:IOrderService_GetAll_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOrderService" type="tns:IOrderService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Create">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/Create" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Read">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/Read" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProduct">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/AddProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/AddCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomerNotExistExceptionFault">
+        <soap:fault use="literal" name="CustomerNotExistExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SetProcessed">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/SetProcessed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProductsByOrderId">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/GetAllProductsByOrderId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrderService">
+    <wsdl:port name="BasicHttpBinding_IOrderService" binding="tns:BasicHttpBinding_IOrderService">
+      <soap:address location="http://localhost:8733/OrderService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

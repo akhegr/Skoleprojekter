@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Order">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_customer" nillable="true" type="tns:Customer" />
+      <xs:element minOccurs="0" name="_delivery" type="xs:boolean" />
+      <xs:element minOccurs="0" name="_id" type="xs:int" />
+      <xs:element minOccurs="0" name="_lastChanged" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="_processed" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Order" nillable="true" type="tns:Order" />
+  <xs:complexType name="Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_fName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_id" type="xs:int" />
+      <xs:element minOccurs="0" name="_lName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_zipCity" nillable="true" type="tns:ZipCity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Customer" nillable="true" type="tns:Customer" />
+  <xs:complexType name="ZipCity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_city" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_id" type="xs:int" />
+      <xs:element minOccurs="0" name="_zipCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZipCity" nillable="true" type="tns:ZipCity" />
+  <xs:complexType name="ArrayOfUniqueProduct">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UniqueProduct" nillable="true" type="tns:UniqueProduct" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUniqueProduct" nillable="true" type="tns:ArrayOfUniqueProduct" />
+  <xs:complexType name="UniqueProduct">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_id" type="xs:int" />
+      <xs:element minOccurs="0" name="_product" nillable="true" type="tns:Product" />
+      <xs:element minOccurs="0" name="_serialNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_warranty" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UniqueProduct" nillable="true" type="tns:UniqueProduct" />
+  <xs:complexType name="Product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_categoryId" type="xs:int" />
+      <xs:element minOccurs="0" name="_description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_id" type="xs:int" />
+      <xs:element minOccurs="0" name="_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="_supplierId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Product" nillable="true" type="tns:Product" />
+  <xs:complexType name="ArrayOfOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:Order" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrder" nillable="true" type="tns:ArrayOfOrder" />
+</xs:schema>

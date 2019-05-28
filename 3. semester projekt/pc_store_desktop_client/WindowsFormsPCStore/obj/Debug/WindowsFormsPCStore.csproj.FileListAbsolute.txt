@@ -1,0 +1,14 @@
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\bin\Debug\WindowsFormsPCStore.exe.config
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\bin\Debug\WindowsFormsPCStore.exe
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\bin\Debug\WindowsFormsPCStore.pdb
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.csprojAssemblyReference.cache
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.Properties.Resources.resources
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.csproj.GenerateResource.cache
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.csproj.CoreCompileInputs.cache
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.exe
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.pdb
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.Forms.FormFrontPage.resources
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.Forms.FormViewOrder.resources
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.Forms.PassCreate.resources
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.Forms.PassSystem.resources
+C:\Users\akheg\source\repos\projekt_3_dmaa0917_grp1\pc_store_desktop_client\WindowsFormsPCStore\obj\Debug\WindowsFormsPCStore.Forms.TabOrderList.resources

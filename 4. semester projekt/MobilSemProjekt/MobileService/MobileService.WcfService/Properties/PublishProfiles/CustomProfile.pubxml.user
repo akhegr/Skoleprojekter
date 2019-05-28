@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://hegr.dk/dmax0917</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App.config">
+      <publishTime>04/09/2019 11:34:53</publishTime>
+    </File>
+    <File Include="bin/MobileService.Controller.dll">
+      <publishTime>05/28/2019 10:44:14</publishTime>
+    </File>
+    <File Include="bin/MobileService.Controller.pdb">
+      <publishTime>05/28/2019 10:44:14</publishTime>
+    </File>
+    <File Include="bin/MobileService.Database.dll">
+      <publishTime>05/28/2019 10:44:13</publishTime>
+    </File>
+    <File Include="bin/MobileService.Database.pdb">
+      <publishTime>05/28/2019 10:44:13</publishTime>
+    </File>
+    <File Include="bin/MobileService.Exception.dll">
+      <publishTime>05/28/2019 10:44:12</publishTime>
+    </File>
+    <File Include="bin/MobileService.Exception.pdb">
+      <publishTime>05/28/2019 10:44:12</publishTime>
+    </File>
+    <File Include="bin/MobileService.Model.dll">
+      <publishTime>05/28/2019 10:44:12</publishTime>
+    </File>
+    <File Include="bin/MobileService.Model.pdb">
+      <publishTime>05/28/2019 10:44:12</publishTime>
+    </File>
+    <File Include="bin/MobileService.WcfService.dll">
+      <publishTime>05/28/2019 10:44:14</publishTime>
+    </File>
+    <File Include="bin/MobileService.WcfService.pdb">
+      <publishTime>05/28/2019 10:44:14</publishTime>
+    </File>
+    <File Include="LocationService.svc">
+      <publishTime>04/09/2019 11:09:22</publishTime>
+    </File>
+    <File Include="RatingService.svc">
+      <publishTime>04/09/2019 11:23:32</publishTime>
+    </File>
+    <File Include="Service1.svc">
+      <publishTime>03/04/2019 13:06:58</publishTime>
+    </File>
+    <File Include="UserService.svc">
+      <publishTime>04/10/2019 13:02:08</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/28/2019 10:44:31</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

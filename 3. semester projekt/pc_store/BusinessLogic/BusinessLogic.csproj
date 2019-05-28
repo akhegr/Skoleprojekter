@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6908C46B-7995-436E-994D-7B944E44FB36}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoryController.cs" />
+    <Compile Include="ConnectionController.cs" />
+    <Compile Include="EmployeeController.cs" />
+    <Compile Include="ZipCityController.cs" />
+    <Compile Include="CustomerController.cs" />
+    <Compile Include="SupplierController.cs" />
+    <Compile Include="OrderController.cs" />
+    <Compile Include="ProductController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{DC1DE35F-C496-43F7-BCE8-62EAD218A52A}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{F6278E88-EB71-4A47-82FA-F827D50EEC7D}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj">
+      <Project>{480FF9C1-266A-44D2-A78D-B37BB309C941}</Project>
+      <Name>Exceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
