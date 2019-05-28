@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=OrderCtrl
+comment1.params=
+comment1.target=OrderCtrl()
+comment2.params=date\ employeePhone
+comment2.target=int\ createOrder(java.lang.String,\ int)
+comment2.text=\r\n\ Opret\ ordre\r\n\r\n\ @param\ date\ Datoen\ for\ k\u00F8bet\r\n\ @param\ employeePhone\ Medarbejderens\ telefonnummer\r\n\ @return\ int\ ordrenummer\r\n
+comment3.params=orderId
+comment3.target=model.Order\ findOrder(int)
+comment3.text=\r\n\ Find\ order\r\n\r\n\ @param\ id\ Ordrens\ id\r\n\ @return\ Order\ Den\ samlede\ ordre\r\n
+comment4.params=amount\ barcode\ orderId
+comment4.target=double\ addOli(int,\ int,\ int)
+comment4.text=\r\n\ Tilf\u00F8j\ produkt\ til\ ordren\ (OrderLineItem)\r\n\r\n\ @param\ amount\ M\u00E6ngden\ af\ produktet\r\n\ @param\ barcode\ Produktets\ stregkode\r\n\ @param\ orderId\ Ordrens\ id\r\n\ @return\ double\ Delordrens\ samlede\ pris\r\n
+comment5.params=customerPhone\ orderId
+comment5.target=void\ addCustomer(int,\ int)
+comment5.text=\r\n\ Tilf\u00F8j\ kunde\r\n\r\n\ @param\ customerPhone\ Kundens\ telefonnummer\r\n\ @param\ orderId\ Ordrens\ id\r\n
+comment6.params=orderId
+comment6.target=boolean\ finishOrder(int)
+comment6.text=\r\n\ Fuldf\u00F8r\ ordren\r\n\r\n\ @param\ orderId\ Ordrens\ id\r\n\ @return\ boolean\ Ordrens\ status\r\n
+numComments=7

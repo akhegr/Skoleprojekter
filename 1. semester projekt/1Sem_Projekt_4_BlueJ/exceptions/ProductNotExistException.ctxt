@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ProductNotExistException
+comment1.params=barcode
+comment1.target=ProductNotExistException(int)
+comment2.params=
+comment2.target=int\ getBarcode()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

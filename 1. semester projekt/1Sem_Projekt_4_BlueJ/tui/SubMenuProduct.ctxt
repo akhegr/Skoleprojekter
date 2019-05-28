@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=SubMenuProduct
+comment1.params=
+comment1.target=SubMenuProduct()
+comment2.params=
+comment2.target=void\ start()
+comment3.params=
+comment3.target=void\ addProduct()
+comment4.params=
+comment4.target=void\ findProduct()
+comment5.params=
+comment5.target=void\ updateProduct()
+numComments=6

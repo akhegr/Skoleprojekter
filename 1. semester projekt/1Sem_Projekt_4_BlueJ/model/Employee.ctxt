@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Employee
+comment1.params=address\ email\ name\ phone\ position
+comment1.target=Employee(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getPosition()
+comment3.params=position
+comment3.target=void\ setPosition(java.lang.String)
+numComments=4

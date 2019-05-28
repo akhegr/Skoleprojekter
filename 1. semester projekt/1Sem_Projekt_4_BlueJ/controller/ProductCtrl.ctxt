@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=ProductCtrl
+comment1.params=
+comment1.target=ProductCtrl()
+comment2.params=barcode\ category\ name\ price
+comment2.target=void\ createProduct(int,\ java.lang.String,\ java.lang.String,\ double)
+comment2.text=\r\n\ Opret\ produkt\r\n\r\n\ @param\ barcode\ Produktets\ stregkode\r\n\ @param\ category\ Produktets\ kategori\r\n\ @param\ name\ Produktets\ navn\r\n\ @param\ price\ Produktets\ pris\r\n
+comment3.params=barcode
+comment3.target=model.Product\ findProduct(int)
+comment3.text=\r\n\ Find\ produkt\r\n\r\n\ @param\ barcode\ Produktets\ stregkode\r\n\ @return\ Product\ Det\ s\u00F8gte\ produkt\r\n
+comment4.params=barcode\ price
+comment4.target=void\ updateProduct(int,\ double)
+comment4.text=\r\n\ Opdater\ produkt\r\n\r\n\ @param\ barcode\ Produktets\ stregkode\r\n\ @param\ price\ Produktets\ pris\r\n
+comment5.params=barcode
+comment5.target=java.lang.String\ findCategory(int)
+comment5.text=\r\n\ Find\ produktets\ kategori\r\n\r\n\ @param\ barcode\ Produktets\ stregkode\r\n\ @return\ String\ Produktets\ kategori\r\n
+comment6.params=barcode
+comment6.target=java.lang.String\ findName(int)
+comment6.text=\r\n\ Find\ produktets\ navn\r\n\r\n\ @param\ barcode\ Produktets\ stregkode\r\n\ @return\ String\ Produktets\ navn\r\n
+comment7.params=barcode
+comment7.target=double\ findPrice(int)
+comment7.text=\r\n\ Find\ produktets\ pris\r\n\r\n\ @param\ barcode\ Produktets\ stregkode\r\n\ @return\ double\ Produktets\ pris\r\n
+numComments=8

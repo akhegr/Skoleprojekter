@@ -1,0 +1,3 @@
+shop.png - https://image.freepik.com/free-icon/shopping-cart-with-product-inside_318-59544.jpg
+user.png - https://image.freepik.com/free-icon/male-user-silhouette_318-35708.jpg
+product.png - https://image.freepik.com/free-icon/package-for-delivery_318-61668.jpg

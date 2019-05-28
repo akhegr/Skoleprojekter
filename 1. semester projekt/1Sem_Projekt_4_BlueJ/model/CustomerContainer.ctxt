@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=CustomerContainer
+comment1.params=
+comment1.target=CustomerContainer()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CustomerContainer\r\n
+comment2.params=
+comment2.target=CustomerContainer\ getInstance()
+comment2.text=\r\n\ getInstance()\r\n
+comment3.params=address\ email\ name\ phone\ account\ discount\ loan\ type
+comment3.target=void\ createCustomer(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ double,\ double,\ double,\ int)
+comment3.text=\r\n\ Create\ Customer\r\n\r\n\ @param\ \ String\ address\ \ The\ address\ of\ the\ Customer\r\n\ @param\ \ String\ email\ \ The\ email\ address\ of\ the\ Customer\r\n\ @param\ \ String\ name\ \ The\ name\ of\ the\ Customer\r\n\ @param\ \ int\ phone\ \ The\ phonenumber\ of\ the\ Customer\r\n\ @param\ \ double\ account\ \ The\ money\ on\ the\ account\r\n\ @param\ \ double\ discount\ \ The\ discount\ the\ Customer\ got\r\n\ @param\ \ double\ loan\ \ The\ amount\ of\ money\ the\ Customer\ lent\r\n\ @param\ \ int\ type\ \ The\ type\ of\ account\ the\ user\ has\r\n
+comment4.params=phone
+comment4.target=Customer\ findCustomer(int)
+comment4.text=\r\n\ Find\ the\ Customer\r\n\r\n\ @param\ \ int\ phone\ \ The\ phonenumber\ of\ the\ Customer\r\n\ @return\ the\ found\ Customer\r\n
+comment5.params=oldPhone\ address\ email\ name\ phone\ account\ discount\ loan\ type
+comment5.target=void\ updateCustomer(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ double,\ double,\ double,\ int)
+comment5.text=\r\n\ Update\ Customer\r\n\r\n\ @param\ \ int\ oldPhone\ \ The\ old\ phonenumber\ of\ the\ Customer\r\n\ @param\ \ String\ address\ \ The\ address\ of\ the\ Customer\r\n\ @param\ \ String\ email\ \ The\ email\ address\ of\ the\ Customer\r\n\ @param\ \ String\ name\ \ The\ name\ of\ the\ Customer\r\n\ @param\ \ int\ phone\ \ The\ phonenumber\ of\ the\ Customer\r\n\ @param\ \ double\ account\ \ The\ money\ on\ the\ account\r\n\ @param\ \ double\ discount\ \ The\ discount\ the\ Customer\ got\r\n\ @param\ \ double\ loan\ \ The\ amount\ of\ money\ the\ Customer\ lent\r\n\ @param\ \ int\ type\ \ The\ type\ of\ account\ the\ user\ has\r\n
+numComments=6

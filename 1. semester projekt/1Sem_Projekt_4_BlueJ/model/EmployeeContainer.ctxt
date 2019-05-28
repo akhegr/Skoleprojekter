@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=EmployeeContainer
+comment1.params=
+comment1.target=EmployeeContainer()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ EmployeeContainer\r\n
+comment2.params=
+comment2.target=EmployeeContainer\ getInstance()
+comment2.text=\r\n\ getInstance()\r\n
+comment3.params=address\ email\ name\ phone\ position
+comment3.target=void\ createEmployee(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment3.text=\r\n\ Create\ Employee\r\n\r\n\ @param\ \ String\ address\ \ The\ address\ of\ the\ Employee\r\n\ @param\ \ String\ email\ \ The\ email\ address\ of\ the\ Employee\r\n\ @param\ \ String\ name\ \ The\ name\ of\ the\ Employee\r\n\ @param\ \ int\ phone\ \ The\ phonenumber\ of\ the\ Employee\r\n\ @param\ \ String\ position\ \ The\ position\ of\ the\ Employee\r\n
+comment4.params=phone
+comment4.target=Employee\ findEmployee(int)
+comment4.text=\r\n\ Find\ the\ Employee\r\n\r\n\ @param\ \ int\ phone\ \ The\ phonenumber\ of\ the\ Employee\r\n\ @return\ the\ found\ Employee\r\n
+comment5.params=oldPhone\ address\ email\ name\ phone\ position
+comment5.target=void\ updateEmployee(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment5.text=\r\n\ Update\ Employee\r\n\r\n\ @param\ \ int\ oldPhone\ \ The\ old\ phonenumber\ of\ the\ Employee\r\n\ @param\ \ String\ address\ \ The\ address\ of\ the\ Employee\r\n\ @param\ \ String\ email\ \ The\ email\ address\ of\ the\ Employee\r\n\ @param\ \ String\ name\ \ The\ name\ of\ the\ Employee\r\n\ @param\ \ int\ phone\ \ The\ phonenumber\ of\ the\ Employee\r\n\ @param\ \ String\ position\ \ The\ position\ of\ the\ Employee\r\n
+numComments=6

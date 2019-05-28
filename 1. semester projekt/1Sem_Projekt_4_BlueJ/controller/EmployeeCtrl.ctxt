@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=EmployeeCtrl
+comment1.params=
+comment1.target=EmployeeCtrl()
+comment2.params=address\ email\ name\ phone\ position
+comment2.target=void\ createEmployee(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment2.text=\r\n\ Opret\ medarbejder\r\n\r\n\ @param\ address\ Medarbejderens\ adresse\r\n\ @param\ email\ Medarbejderens\ email\r\n\ @param\ name\ Medarbejderens\ navn\r\n\ @param\ phone\ Medarbejderens\ telefonnummer\r\n\ @param\ position\ Medarbejderens\ rang\r\n
+comment3.params=phone
+comment3.target=model.Employee\ findEmployee(int)
+comment3.text=\r\n\ Find\ medarbejder\r\n\r\n\ @param\ phone\ Medarbejderens\ telefonnummer\r\n\ @return\ Employee\ Den\ s\u00F8gte\ medarbejder\r\n
+comment4.params=oldPhone\ address\ email\ name\ phone\ position
+comment4.target=void\ updateEmployee(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment4.text=\r\n\ Opdater\ medarbejder\r\n\r\n\ @param\ oldPhone\ Medarbejderens\ gamle\ telefonnummer\r\n\ @param\ address\ Medarbejderens\ nye\ adresse\r\n\ @param\ email\ Medarbejderens\ nye\ email\r\n\ @param\ name\ Medarbejderens\ nue\ navn\r\n\ @param\ phone\ Medarbejderens\ nye\ telefonnummer\r\n\ @param\ position\ Medarbejderens\ nye\ rang\r\n
+comment5.params=phone
+comment5.target=java.lang.String\ findName(int)
+comment5.text=\r\n\ Find\ medarbejderens\ navn\r\n\r\n\ @param\ phone\ Medarbejderens\ telefonnummer\r\n\ @return\ String\ Medarbejderens\ navn\r\n
+comment6.params=phone
+comment6.target=java.lang.String\ findAddress(int)
+comment6.text=\r\n\ Find\ medarbejderens\ adresse\r\n\r\n\ @param\ phone\ Medarbejderens\ telefonnummer\r\n\ @return\ String\ Medarbejderens\ adresse\r\n
+comment7.params=phone
+comment7.target=java.lang.String\ findEmail(int)
+comment7.text=\r\n\ Find\ medarbejderens\ email\r\n\r\n\ @param\ phone\ Medarbejderens\ telefonnummer\r\n\ @return\ String\ Medarbejderens\ email\r\n
+comment8.params=phone
+comment8.target=java.lang.String\ findPosition(int)
+comment8.text=\r\n\ Find\ medarbejderens\ rang\r\n\r\n\ @param\ phone\ Medarbejderens\ telefonnummer\r\n\ @return\ String\ Medarbejderens\ rang\r\n
+numComments=9
