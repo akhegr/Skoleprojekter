@@ -14,4 +14,4 @@ This project is a new system for a fictive computer shop in C#, which can improv
 This project is an app for mobile devices, which can give the user an overview over nearby locations based on tags, based on data from a Microsoft SQL database, sent through an API, and shown on a Google Maps.
 
 ## 5. semester
-This project is developed for Logimatic, and it is described on LinkedIn.
+This project is developed for Logimatic, and it is described on [LinkedIn}(https://www.linkedin.com/in/akhegr/).
