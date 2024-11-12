@@ -1,0 +1,2 @@
+C:\git\Skoleprojekter\4. semester projekt\MobilSemProjekt\MobilSemProjekt\MobilSemProjekt\MobilSemProjekt\obj\Debug\netstandard2.1\MobilSemProjekt.csproj.AssemblyReference.cache
+C:\git\Skoleprojekter\4. semester projekt\MobilSemProjekt\MobilSemProjekt\MobilSemProjekt\MobilSemProjekt\obj\Debug\netstandard2.1\MobilSemProjekt.GeneratedMSBuildEditorConfig.editorconfig

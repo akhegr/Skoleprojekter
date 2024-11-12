@@ -1,0 +1,296 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.iOS\\MobilSemProjekt.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.iOS\\MobilSemProjekt.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.iOS\\MobilSemProjekt.iOS.csproj",
+        "projectName": "MobilSemProjekt.iOS",
+        "projectPath": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.iOS\\MobilSemProjekt.iOS.csproj",
+        "packagesPath": "C:\\Users\\akheg\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\akheg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.csproj": {
+                "projectPath": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Microsoft.Net.Http": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2578, )"
+            },
+            "Xamarin.Forms.Theme.Base": {
+              "target": "Package",
+              "version": "[1.0.0.43-pre1, )"
+            },
+            "Xamarin.Forms.Theme.Dark": {
+              "target": "Package",
+              "version": "[1.0.0.43-pre1, )"
+            },
+            "Xamarin.Forms.Theme.Light": {
+              "target": "Package",
+              "version": "[1.0.0.43-pre1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.MVVM\\MobilSemProjekt.MVVM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.MVVM\\MobilSemProjekt.MVVM.csproj",
+        "projectName": "MobilSemProjekt.MVVM",
+        "projectPath": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.MVVM\\MobilSemProjekt.MVVM.csproj",
+        "packagesPath": "C:\\Users\\akheg\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.MVVM\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\akheg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "PCLCrypto": {
+              "target": "Package",
+              "version": "[2.0.147, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.csproj",
+        "projectName": "MobilSemProjekt",
+        "projectPath": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.csproj",
+        "packagesPath": "C:\\Users\\akheg\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\akheg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.MVVM\\MobilSemProjekt.MVVM.csproj": {
+                "projectPath": "C:\\git\\Skoleprojekter\\4. semester projekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt\\MobilSemProjekt.MVVM\\MobilSemProjekt.MVVM.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.UnitTestFramework.Extensions": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.VisualStudio.QualityTools.UnitTestFramework": {
+              "target": "Package",
+              "version": "[11.0.50727.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "PInvoke.Windows.Core": {
+              "target": "Package",
+              "version": "[0.7.124, )"
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.10.2, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.10.2, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.10.2, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "Xam.Plugin.Geolocator": {
+              "target": "Package",
+              "version": "[4.5.0.6, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.7, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2578, )"
+            },
+            "Xamarin.Forms.GoogleMaps": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Xamarin.Forms.Theme.Base": {
+              "target": "Package",
+              "version": "[1.0.0.43-pre1, )"
+            },
+            "Xamarin.Forms.Theme.Dark": {
+              "target": "Package",
+              "version": "[1.0.0.43-pre1, )"
+            },
+            "Xamarin.Forms.Theme.Light": {
+              "target": "Package",
+              "version": "[1.0.0.43-pre1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
